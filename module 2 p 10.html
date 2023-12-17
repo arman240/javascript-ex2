@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Even Numbers Extraction</title>
+</head>
+<body>
+
+<script>
+  // Function to extract even numbers from an array
+  function even(arr) {
+    var evenArray = [];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+        evenArray.push(arr[i]);
+      }
+    }
+    return evenArray;
+  }
+
+  // Hardcoded array
+  var numbersArray = [2, 7, 4];
+
+  // Display the original array and the new array on the webpage
+  document.write("<p>Original Array: " + numbersArray + "</p>");
+  document.write("<p>New Array (Even Numbers): " + even(numbersArray) + "</p>");
+</script>
+
+</body>
+</html>
